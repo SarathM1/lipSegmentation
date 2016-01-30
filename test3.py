@@ -25,9 +25,10 @@ cv2.drawContours(im, cnts, -1, (0,255,0), 2,maxLevel=0)
 print cv2.arcLength(cnts[0],True)
 
 cv2.imshow('res',res2)
-cv2.imshow('frame',im)
+cv2.imshow('Output',im)
 cv2.imshow('mask',dilate)
 
+cv2.imwrite('output3.jpg',im)
 cv2.waitKey()
 
 
